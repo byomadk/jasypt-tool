@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane
+    xmlns:fx="http://javafx.com/fxml"
+    xmlns="http://javafx.com/javafx"
+    fx:controller="com.jasypt.jasypt.HelloController">
+<!--    <padding>-->
+<!--        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
+<!--    </padding>-->
+    <children>
+        <VBox alignment="CENTER" spacing="5.0"
+              AnchorPane.leftAnchor="10.0"
+              AnchorPane.rightAnchor="10.0"
+              AnchorPane.topAnchor="10.0"
+              AnchorPane.bottomAnchor="10.0">
+            <children>
+                <VBox spacing="5.0">
+                    <Label fx:id="labelEncryptKey"/>
+                    <TextField fx:id="encryptKey"/>
+                </VBox>
+                <Button fx:id="changeEncrypt" text="Change Key" onAction="#onChangeEncrypt"/>
+            </children>
+
+            <children>
+                <VBox spacing="5.0">
+                    <Label text="Input Encrypt"/>
+                    <TextField fx:id="input"/>
+                    <Label text="Result Encrypt"/>
+                    <TextArea fx:id="resultArea"/>
+                </VBox>
+                <Button fx:id="encryptButton" text="Encrypt" onAction="#onEncryptButtonClick"/>
+            </children>
+
+            <children>
+                <VBox spacing="5.0">
+                    <Label text="Input Decrypt"/>
+                    <TextField fx:id="input2"/>
+                    <Label text="Result Decrypt"/>
+                    <TextArea fx:id="resultArea2"/>
+                </VBox>
+                <Button fx:id="decryptButton" text="Decrypt" onAction="#onDecryptButtonClick"/>
+            </children>
+            <children>
+                <Button fx:id="clearButton" text="Clear" onAction="#onClear"/>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
+<!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"-->
+<!--      fx:controller="com.jasypt.jasypt.HelloController">-->
+<!--    <padding>-->
+<!--        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
+<!--    </padding>-->
+
+<!--    <Label fx:id="labelEncryptKey"/>-->
+<!--    <TextField fx:id="encryptKey"/>-->
+<!--    <Button fx:id="changeEncrypt" text="Change Key" onAction="#onChangeEncrypt"/>-->
+
+<!--    <Label text="Input Encrypt"/>-->
+<!--    <TextField fx:id="input"/>-->
+<!--    <Label text="Result Encrypt"/>-->
+<!--    <TextField fx:id="result"/>-->
+<!--    <Button fx:id="encryptButton" text="Encrypt" onAction="#onEncryptButtonClick"/>-->
+
+<!--    <Label text="Input Decrypt"/>-->
+<!--    <TextField fx:id="input2"/>-->
+<!--    <Label text="Result Decrypt"/>-->
+<!--    <TextField fx:id="result2"/>-->
+<!--    <Button fx:id="decryptButton" text="Decrypt" onAction="#onDecryptButtonClick"/>-->
+
+<!--    <Button fx:id="clearButton" text="Clear" onAction="#onClear"/>-->
+<!--</VBox>-->
